@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<html lang="en">	
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- сообщаем браузеру об отзывчивости -->
+	<meta name="description" content="">
+	<title>Автоматизированная штукатурка стен</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- <link rel="stylesheet" href="css/reset.min.css"> -->
+	<link href="css/style.css" rel="stylesheet">	
+	<link rel="stylesheet" href="css/animate.css">
+  <!-- Slick Slider -->
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+</head>
+<body>
+	<!-- <div class="debug">
+			<div>
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	 -->
+	<header>
+		<section class="top">
+			<div class="wrapper">
+				<div class="top-row">				
+					<div class="top-item top-logo">
+						<img src="images/logo.png" alt="Логотип компании Гипсолит">
+					</div>
+					<div class="top-item top-connect">
+						<a href="#" class="top-phone">+3 050 5555555</a>
+						<button class="top-btn btn popup-btn" data-for-popup-target="recallForm">Получить консультацию</button>
+					</div>
+				</div>				
+			</div>
+		</section>
+		<section class="introduce">
+				<div class="wrapper">
+					<div class="int-row">
+						<div class="int-item int-info wow fadeInLeft">
+							<h1>Автоматизированная <br> штукатурка стен</h1>
+							<p>Идеально ровные стены <br> в кратчайшие сроки</p>
+							<p class="int-banner">Стоимость работ <br> от <strong>300</strong> руб/м<sub>2</sub></p>
+							<strong class="int-trigger">Оплата по факту!</strong>
+						</div><!-- /.int-item -->
+						<div class="int-item int-form wow fadeInRight">
+							<div class="int-form-container">
+								<h2 class="int-form-header">Для расчета точной стоимости <br> закажите <strong>выезд замерщика</strong></h2>
+								<form class="form" action="#" method="POST">
+									<label class="form-lbl" for="un">Ваше имя</label><br>
+									<input type="text" id="un" class="form-inp" name="user" autocomplete="on" required>
+									<label class="form-lbl" for="ut">Номер телефона</label><br>
+									<input type="tel" id="ut" class="form-inp" name="usrtel" required>
+									<button class="form-btn btn" type="submit">Оставьте заяку</button><br>
+									<small>Подарок в день обращения</small>					
+								</form>
+							</div><!-- /.int-form-container -->	
+							<p>
+								 - выезды на замер осуществляются в <br>рабоче дни Пн-Пт с 9:00 до 18:00
+							</p>						
+						</div><!-- /.int-item -->
+					</div><!-- /.int-row -->
+				</div><!-- /.wrapper -->
+		</section><!-- /.introduce -->	
+	</header>
+
+
+	<main>
+		<section class="advantages">
+			<div class="wrapper">				
+				<h2 class="advantages-header">Приемущества работы с нами</h2>
+				<div class="advantages-slider">
+					<div class="advantages-block wow fadeInUp" data-wow-delay="0.1s">
+						<div class="advantages-img">
+							<picture>
+								<source srcset="images/advantages/01_svg_coin.svg" type="image/svg">
+								<img src="images/advantages/01_png_coin.png" alt="Платите по факту">
+							</picture>
+						</div><!-- /.advantages-img -->
+						<h3>Платите по факту</h3>
+						<p>Вы оплачиваете выполненные работы только после их выполнения. <br>Никаких скрытых доплат и промежуточных платежей.</p>
+					</div><!-- /.advantages-block -->
+
+					<div class="advantages-block wow fadeInUp" data-wow-delay="0.2s">
+						<div class="advantages-img">
+							<picture>
+								<source srcset="images/advantages/02_svg_folder.svg" type="image/svg">
+								<img src="images/advantages/02_png_folder.png" alt="Заключаем договор">
+							</picture>
+						</div><!-- /.advantages-img -->
+						<h3>Заключаем договор</h3>
+						<p>Перед началом работ заключаем договор на юридическое лицо. <br>Вы можете быть уверены, что все обязательства будут выполнены.</p>
+					</div><!-- /.advantages-block -->
+
+					<div class="advantages-block wow fadeInUp" data-wow-delay="0.3s">
+						<div class="advantages-img">
+							<picture>
+								<source srcset="images/advantages/03_svg_clock.svg" type="image/svg">
+								<img src="images/advantages/03_png_clock.png" alt="Точно в срок">
+							</picture>
+						</div><!-- /.advantages-img -->
+						<h3>Точно в срок</h3>
+						<p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше.</p>
+					</div><!-- /.advantages-block -->
+
+					<div class="advantages-block wow fadeInUp" data-wow-delay="0.4s">
+						<div class="advantages-img">
+							<picture>
+								<source srcset="images/advantages/04_svg_pig.svg" type="image/svg">
+								<img src="images/advantages/04_png_pig.png" alt="Экономите на материалах">
+							</picture>
+						</div><!-- /.advantages-img -->
+						<h3>Экономите на материалах</h3>
+						<p>Мы являемся структурным подразделением компании поставщика строительных смесей <a href="#">gicema.ua</a> и даём Вам самые выгодные цены.</p>
+					</div><!-- /.advantages-block -->
+				</div><!-- /.advantages-slider -->
+			</div><!-- /.wrapper -->
+		</section><!-- /.advantages -->
+
+		<section class="prices">
+			<div class="wrapper">
+
+				<div class="prices-row">
+					<div class="prices-item prices-header">
+						<h2>Цены</h2>
+						<p>Выберите вариант, который подходит Вам:</p>
+					</div><!-- /.section-header -->
+					<div class="prices-item">
+						<button class="prices-btn btn popup-btn">Рассчитать точную стоимость</button>
+					</div><!-- /.prices-item -->
+				</div><!-- /.prices-row -->
+
+				<div class="price-row">
+					<div class="price-item">
+						<h4>Штукатурка вашим материалом</h4>
+						<img src="images/priceImg/1.jpg" alt="Штукатурка вашим материалом">
+						<p class="price-tag">от 300 руб/м<sub>2</sub></p>						
+						<ul class="price-properties">
+							<li>Проведение работ</li>
+							<li>Уборка</li>							
+						</ul><!-- /.price-properties -->
+						<button class="price-btn btn">Заказать</button>
+					</div><!-- /.price-item -->
+
+					<div class="price-item">
+						<h4>Штукатурка под шпаклёвку</h4>
+						<img src="images/priceImg/2.jpg" alt="Штукатурка под шпаклёвку">
+						<p class="price-tag">от 530 руб/м<sub>2</sub></p>
+						<ul class="price-properties">
+							<li>Завоз материала и его подъём</li>
+							<li>Проведение работ</li>
+							<li>Уборка</li>
+							<li>Гарантия 2 года</li>							
+						</ul><!-- /.price-properties -->
+						<button class="price-btn btn">Заказать</button>
+					</div><!-- /.price-item -->
+
+					<div class="price-item">
+						<h4>Штукатурка под обои</h4>
+						<img src="images/priceImg/3.jpg" alt="Штукатурка под обои">
+						<p class="price-tag">от 560 руб/м<sub>2</sub></p>
+						<ul class="price-properties">
+							<li>Завоз материала и его подъём</li>
+							<li>Проведение работ</li>
+							<li>Уборка</li>
+							<li>Гарантия 2 года</li>
+							<li>Можно сразу клеить обои</li>
+						</ul><!-- /.price-properties -->
+						<button class="price-btn btn">Заказать</button>
+					</div><!-- /.price-item -->
+				</div><!-- /.price-row -->
+				
+			</div><!-- /.wrapper -->
+		</section><!-- /.prices -->
+
+		<section class="feedback">
+			<div class="wrapper">
+				<div class="feedback-header">
+					<h2>Отзывы</h2>
+				</div><!-- /.feedback-header -->
+
+				<div class="feedback-slider">					
+					<div class="feedback-slider_item ">
+						<div class="row">
+							<div class="row-part">
+								<div class="fotorama" data-width="100%" data-nav="thumbs">	
+									<img src="images/feedBack/1.jpg" alt="">							
+									<img src="images/feedBack/2.jpg" alt="">							
+									<img src="images/feedBack/3.jpg" alt="">							
+									<img src="images/feedBack/4.jpg" alt="">							
+									<img src="images/feedBack/5.jpg" alt="">							
+									<img src="images/feedBack/6.jpg" alt="">							
+								</div><!-- /.fotorama -->
+							</div><!-- /.row-part -->
+							<div class="row-part">
+								<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+								<p>Площадь: <strong>357 м<sub>2</sub></strong></p>
+								<p>Выполнен за: <strong>10 дней</strong></p>
+								<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+								<p>Особенности: <strong>перепады неровности стен достигали 6 см</strong></p>
+								<div class="media">									
+									<img src="images/feedBack/avatar.png" alt="Заказчик" class="media-object">									
+									<div class="media-body">
+										<span>Клиент</span>
+										<h3>Васисуалий Лоханкин</h3>										
+									</div><!-- /.media-body -->
+								</div><!-- /.media -->
+								<div class="feedback-text">
+									<p>Персонаж романа Ильи Ильфа и Евгения Петрова «Золотой телёнок». Герой, появляющийся в трёх главах произведения, много размышляет о судьбах русской интеллигенции; после ухода жены Варвары начинает изъясняться пятистопным ямбом.</p>
+								</div>
+							</div><!-- /.row-part -->
+						</div><!-- /.row -->
+					</div><!-- /.feedback-slider_item  -->
+
+					<div class="feedback-slider_item ">
+						<div class="row">
+							<div class="row-part">
+								<div class="fotorama" data-width="100%" data-nav="thumbs" data-loop="true">									
+									<img src="images/feedBack/1.jpg" alt="">							
+									<img src="images/feedBack/2.jpg" alt="">							
+									<img src="images/feedBack/3.jpg" alt="">							
+									<img src="images/feedBack/4.jpg" alt="">							
+									<img src="images/feedBack/5.jpg" alt="">							
+									<img src="images/feedBack/6.jpg" alt="">							
+								</div><!-- /.fotorama -->
+							</div><!-- /.row-part -->
+							<div class="row-part">
+								<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+								<p>Площадь: <strong>357 м<sub>2</sub></strong></p>
+								<p>Выполнен за: <strong>10 дней</strong></p>
+								<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+								<p>Особенности: <strong>перепады неровности стен достигали 6 см</strong></p>
+								<div class="media">									
+									<img src="images/feedBack/avatar.png" alt="Заказчик" class="media-object">									
+									<div class="media-body">
+										<span>Клиент</span>
+										<h3>Васисуалий Лоханкин</h3>										
+									</div><!-- /.media-body -->
+								</div><!-- /.media -->
+								<div class="feedback-text">
+									<p>Персонаж романа Ильи Ильфа и Евгения Петрова «Золотой телёнок». Герой, появляющийся в трёх главах произведения, много размышляет о судьбах русской интеллигенции; после ухода жены Варвары начинает изъясняться пятистопным ямбом.</p>
+								</div>
+							</div><!-- /.row-part -->
+						</div><!-- /.row -->
+					</div><!-- /.feedback-slider_item  -->
+
+					<div class="feedback-slider_item ">
+						<div class="row">
+							<div class="row-part">
+								<div class="fotorama" data-width="100%" data-nav="thumbs">							
+										<img src="images/feedBack/1.jpg" alt="">						
+										<img src="images/feedBack/2.jpg" alt="">						
+										<img src="images/feedBack/3.jpg" alt="">						
+										<img src="images/feedBack/4.jpg" alt="">						
+										<img src="images/feedBack/5.jpg" alt="">						
+										<img src="images/feedBack/6.jpg" alt="">						
+								</div><!-- /.fotorama -->
+							</div><!-- /.row-part -->
+							<div class="row-part">
+								<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+								<p>Площадь: <strong>357 м<sub>2</sub></strong></p>
+								<p>Выполнен за: <strong>10 дней</strong></p>
+								<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+								<p>Особенности: <strong>перепады неровности стен достигали 6 см</strong></p>
+								<div class="media">									
+									<img src="images/feedBack/avatar.png" alt="Заказчик" class="media-object">									
+									<div class="media-body">
+										<span>Клиент</span>
+										<h3>Васисуалий Лоханкин</h3>										
+									</div><!-- /.media-body -->
+								</div><!-- /.media -->
+								<div class="feedback-text">
+									<p>Персонаж романа Ильи Ильфа и Евгения Петрова «Золотой телёнок». Герой, появляющийся в трёх главах произведения, много размышляет о судьбах русской интеллигенции; после ухода жены Варвары начинает изъясняться пятистопным ямбом.</p>
+								</div>
+							</div><!-- /.row-part -->
+						</div><!-- /.row -->
+					</div><!-- /.feedback-slider_item  -->					
+				</div><!-- /.feedback-slider -->
+
+				<div class="fb-form-row">
+					<div class="row-item">
+						<div class="feedback-form">
+							<h3>Хотите так же? Оставьте Ваши контактные данные</h3>
+							<form action="" class="form" method="POST">
+								<div class="fbf-row">
+									<div class="fb-form-part">
+									<label class="form-lbl" for="fun">Ваше имя</label><br>
+									<input type="text" id="fun" class="form-inp" name="user" autocomplete="on" required>
+								</div><!-- /.fb-form-part -->
+								<div class="fb-form-part">
+									<label class="form-lbl" for="fut">Номер телефона</label><br>
+									<input type="tel" id="fut" class="form-inp"name="usrtel" required>
+								</div><!-- /.fb-form-part -->
+								</div><!-- /.fbf-row -->
+								<button class="form-btn btn" type="submit">Оставьте заяку</button><br>
+							</form><!-- /.form -->
+						</div><!-- /.feedback-form -->
+					</div><!-- /.row-item -->
+				</div><!-- /.row -->
+
+			</div><!-- /.wrapper -->
+			<img class="fb-hand" src="images/feedBack/hand.png" alt="Рука - укатель">
+		</section><!-- /.feedback -->
+
+		<section class="scheme">
+			<div class="wrapper">
+				<h2 class="scheme-header">Схема работы</h2>
+				<p>Работа над вашим объектом будет включать в себя следующие этапы</p>
+				<div class="scheme-row">
+					<div class="scheme-item">
+						<img src="images/workingScheme/1.png" alt="Заявка">
+						<h3>Заявка</h3>
+						<p>Оставляйте онлайн заявку или звоните <a href="#">+3 050 5555555</a></p>
+					</div><!-- /.scheme-item -->
+					<div class="scheme-item">
+						<img src="images/workingScheme/2.png" alt="Выезд специалиста">
+						<h3>Выезд специалиста</h3>
+						<p>В течение 1 рабочего дня к Вам приезжает специалист, который выполнит замеры для точной стоимости работ</p>
+					</div><!-- /.scheme-item -->
+					<div class="scheme-item">
+						<img src="images/workingScheme/3.png" alt="Составление договора">
+						<h3>Составление договора</h3>
+						<p>Готовим договор и согласовываем с Вами</p>
+					</div><!-- /.scheme-item -->
+					<div class="scheme-item">
+						<img src="images/workingScheme/4.png" alt="Начало работ">
+						<h3>Начало работ</h3>
+						<p>Доставляем материалы, оборудование, подписываем договор и начинаем работы</p>
+					</div><!-- /.scheme-item -->
+					<div class="scheme-item">
+						<img src="images/workingScheme/5.png" alt="Завершение работ">
+						<h3>Завершение работ</h3>
+						<p>После окончания работ Вы проверяете качество и подписываете акт сдачи, производите оплату</p>
+					</div>	<!-- /.scheme-item -->
+				</div><!-- /.scheme-row -->
+			</div><!-- /.wrapper -->
+		</section><!-- /.scheme -->
+
+		<section class="all-inclusive">
+			<div class="wrapper">
+				<div class="incl-header">
+					<h2>Все на 100% включено!</h2>
+					<p>При выполнении работ с нашим материалом в стоимость входит:</p>
+				</div><!-- /.incl-header -->
+				<div class="incl-row">
+
+					<div class="incl-item">
+						<div class="incl-item-left">
+							<span class="circle-border">
+								<span class="circle">1.</span>
+							</span>
+						</div>						
+						<div class="incl-item-body">
+							<h4>Материал</h4>
+							<p>штукатурка, грунтовка или бетоноконтакт, маяки, сетка на стыки</p>
+						</div>
+					</div><!-- /.incl-item -->
+
+					<div class="incl-item">
+						<div class="incl-item-left">
+							<span class="circle-border">
+								<span class="circle">2.</span>
+							</span>
+						</div>						
+						<div class="incl-item-body">
+							<h4>Доставка оборудования и материала на объект</h4>
+							<p></p>
+						</div>
+					</div><!-- /.incl-item -->
+
+					<div class="incl-item">
+						<div class="incl-item-left">
+							<span class="circle-border">
+								<span class="circle">3.</span>
+							</span>
+						</div>						
+						<div class="incl-item-body">
+							<h4>Подготовка поверхности</h4>
+							<p>(очистка, грунтование)</p>
+						</div>
+					</div><!-- /.incl-item -->
+
+					<div class="incl-item">
+						<div class="incl-item-left">
+							<span class="circle-border">
+								<span class="circle">4.</span>
+							</span>
+						</div>						
+						<div class="incl-item-body">
+							<h4>Установка маяков</h4>
+							<p></p>
+						</div>
+					</div><!-- /.incl-item -->
+
+					<div class="incl-item">
+						<div class="incl-item-left">
+							<span class="circle-border">
+								<span class="circle">5.</span>
+							</span>
+						</div>						
+						<div class="incl-item-body">
+							<h4>Оштукатуривание поверхности</h4>
+							<p></p>
+						</div>
+					</div><!-- /.incl-item -->
+
+					<div class="incl-item">
+						<div class="incl-item-left">
+							<span class="circle-border">
+								<span class="circle">6.</span>
+							</span>
+						</div>						
+						<div class="incl-item-body">
+							<h4>Удаление маяков</h4>
+							<p></p>
+						</div>
+					</div><!-- /.incl-item -->
+
+					<div class="incl-item">
+						<div class="incl-item-left">
+							<span class="circle-border">
+								<span class="circle">7.</span>
+							</span>
+						</div>						
+						<div class="incl-item-body">
+							<h4>Глянцевание</h4>
+							<p></p>
+						</div>
+					</div><!-- /.incl-item -->
+
+					<div class="incl-item">
+						<div class="incl-item-left">
+							<span class="circle-border">
+								<span class="circle">8.</span>
+							</span>
+						</div>						
+						<div class="incl-item-body">
+							<h4>Уборка и вывоз мусора</h4>
+							<p></p>
+						</div>						
+					</div><!-- /.incl-item -->
+				</div><!-- /.incl-row -->
+			</div><!-- /.wrapper -->
+		</section><!-- /.all-inclusive -->
+
+		<section class="dread">
+			<div class="wrapper">
+				<div class="dread-header">
+					<h2>Мы развеем все опасения</h2>
+				</div><!-- /.dread-header -->
+				<div class="dread-row">
+					<div class="dread-item dread-list_problems">
+						<h4>Какие могут быть проблемы:</h4>
+						<ul>
+							<li>Стены и углы будут неровными</li>
+							<li>Ремонт затянется на многие месяцы</li>
+							<li>Сложности с доставкой и разгрузкой материалов</li>
+							<li>Останется мусор и пыль после работ</li>
+						</ul>
+					</div><!-- /.dread-item dread-list_problems -->
+					<div class="dread-item dread-list_solutions">
+						<h4>Наше решение:</h4>
+						<ul>
+							<li>Высокая квалификация специалистов + минимум 5-летний опыт работы = идеально ровные поверхности</li>
+							<li>Соблюдаем сроки, которые прописаны в договоре. На квартиру площадью 135 м<sup>2</sup> уходит от 3 до 5 дней</li>
+							<li>Доставка материала и подъем бесплатно</li>
+							<li>Убираем и вывозим мусор после работ</li>
+						</ul>
+					</div><!-- /.dread-item dread-list_solutions -->
+				</div><!-- /.dread-row -->
+			</div><!-- /.wrapper -->
+			<img src="images/women.png" alt="" class="dread-women">
+		</section><!-- /.dread -->
+
+		<section class="materials">
+			<div class="wrapper">
+				<div class="materials-header">
+					<h2>Материалы</h2>
+					<p>Мы работаем только качественными, проверенными временем материалами, следующих производителей:</p>
+				</div><!-- /.materials-header -->
+				<div class="materials-slider">
+					<div class="materials-item">
+						<div class="materials-img">
+							<img src="images/materials/knauf.png" alt="Knauf">
+						</div>		
+						<h3>Knauf</h3>
+						<p>МП-75 <strong>245</strong> руб/меш</p>
+						<a class="materials-link" href="#">Сертификат</a>			
+					</div><!-- /.materials-item -->
+
+					<div class="materials-item">
+						<div class="materials-img">
+							<img src="images/materials/volma.png" alt="Volma">
+						</div>						
+						<h3>Volma</h3>
+						<p>Аква-слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+						<a class="materials-link" href="#">Сертификат</a>
+					</div><!-- /.materials-item -->
+
+					<div class="materials-item">
+						<div class="materials-img">
+							<img src="images/materials/forman.png" alt="Forman">
+						</div>
+						<h3>Forman</h3>
+						<p>Аква-слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+						<a class="materials-link" href="#">Сертификат</a>
+					</div><!-- /.materials-item -->
+
+					<div class="materials-item">
+						<div class="materials-img">
+							<img src="images/materials/ceresit.png" alt="Ceresit">
+						</div>
+						<h3>Ceresit</h3>
+						<p>Аква-слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+						<a class="materials-link" href="#">Сертификат</a>
+					</div><!-- /.materials-item -->
+
+				</div><!-- /.materials-slider -->
+				<p class="materials-info">Вы можете приобрести материалы по оптовым ценам на сайте <a class="materials-link" href="#">gicema.ua</a> или по телефону <a href=# class="materials-phone">+3 050 5555555</a></p>
+			</div><!-- /.wrapper -->
+		</section><!-- /.materials -->
+
+		<section class="tour">			
+			<div class="wrapper">
+				<div class="tour-row">
+					<div class="tour-item tour-info">
+						<h2>Посмотрите <br>как мы работаем</h2>
+						<p>Хотите удостовериться в профессионализме наших сотрудников?</p>
+						<p>Вы можете сделать это, приехав на один из наших объектов, и понаблюдав за ходом работ. Увидите оборудование, материалы и качество исполнения.</p>		
+					</div><!-- /.tour-item -->
+					<div class="tour-item tour-form">
+						<div class="tour-form-container">
+							<h2 class="tour-form-header">Оставьте контактные данные<br>для связи</h2>
+							<form class="form" action="#" method="POST">
+								<label class="form-lbl" for="t-un">Ваше имя</label>
+								<input type="text" id="t-un" class="form-inp" name="user"autocomplete="on" required>
+								<label class="form-lbl" for="t-ut">Номер телефона</label>
+								<input type="tel" id="t-ut" class="form-inp"name="usrtel" required>
+								<button class="form-btn btn" type="submit">Записаться на просмотр</button>
+								<small>Подберем ближайший к Вам объект</small>
+							</form>
+						</div><!-- /.tour-form-container -->									
+					</div><!-- /.tour-item -->
+				</div><!-- /.tour-row -->
+			</div><!-- /.wrapper -->		
+		</section><!-- /.tour -->
+
+		<section class="addServices">
+			<div class="wrapper">
+				<div class="addServices-header">
+					<h2>Дополнительные услуги</h2>
+					<p>Помимо штукатурных работ, Вы можете заказать у нас следующие услуги</p>
+				</div><!-- /.addServices-header -->
+				<div class="addServices-row">
+					<div class="addServices-item">						
+						<img src="images/addServices/1.jpg" alt="Монтаж электропроводки">								
+						<h3>Монтаж электропроводки</h3>
+						<button class="btn">Цены</button>
+					</div>
+					<!-- /.addServices-item -->
+
+					<div class="addServices-item">						
+						<img src="images/addServices/2.jpg" alt="Стяжка пола">
+						<h3>Стяжка пола</h3>
+						<button class="btn">Цены</button>
+					</div><!-- /.addServices-item -->
+
+					<div class="addServices-item">
+						<img src="images/addServices/3.jpg" alt="Сантехнические работы">
+						<h3>Сантехнические работы</h3>
+						<button class="btn">Цены</button>
+					</div><!-- /.addServices-item -->	
+				</div><!-- /.addServices-row -->
+				
+
+			</div><!-- /.wrapper -->
+		</section><!-- /.addServices -->
+
+		<section class="contacts">
+			<div class="wrapper">
+				<div class="contacts-row">
+
+					<div class="contacts-item contacts-info">
+						<h2>Контакты</h2>
+						<p>Адрес офиса: <br> Киев, улица Эспланадная, 1</p>
+						<div class="contacts-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.125028272498!2d30.520837215697394!3d50.4387717794738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefe3005cf4f%3A0x45aa0bece7f644a6!2zVHJ0cyBIdWxpdmVyLCDQstGD0LvQuNGG0Y8g0JXRgdC_0LvQsNC90LDQtNC90LAsIDEsINCa0LjRl9CyLCAwMTYwMQ!5e0!3m2!1sru!2sua!4v1552576457921" allowfullscreen></iframe>
+						</div><!-- /.contacts-map -->
+						<p>Номер телефона: <br><a href="#" class="contacts-phone">+3 050 5555555</a></p>
+						<p>E-mail: <br><a class="contacts-link" href="mailto:gipsolit@gipsolit.ua">gipsolit@gipsolit.ua</a></p>
+						<p>Реквизиты <br>ИНН 555555555555 ЕДРПУ 55555</p>
+					</div><!-- /.contacts-item -->
+					<div class="contacts-item contacts-form">
+						<div class="contacts-form-container">
+							<h2 class="contacts-form-header">Оставьте контактные данные<br>для связи</h2>
+							<form class="form" action="#" method="POST">
+								<label class="form-lbl" for="c-un">Ваше имя</label>
+								<input type="text" id="c-un" class="form-inp" name="user" autocomplete="on" required>
+
+								<label class="form-lbl" for="c-ut" required>Номер телефона</label>
+								<input type="tel" id="c-ut" class="form-inp" name="usrtel">
+
+								<label class="form-lbl" for="c-umail">E-mail:</label>
+								<input type="email" id="c-umail" class="form-inp" name="usrmail">
+
+								<label class="form-lbl" for="c-umes">Введите сообщение</label>
+								<textarea class="form-textarea" name="usrmassege" id="c-umes" rows="5"></textarea>
+
+								<button class="form-btn btn" type="submit">Оставьте заяку</button>
+													
+							</form>
+						</div><!-- /.contacts-form-container -->		
+					</div><!-- /.contacts-item -->
+				</div><!-- /.contacts-row -->
+			</div><!-- /.wrapper -->
+		</section><!-- /.contacts -->
+
+	</main>
+	<footer>
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-item footer-logo">					
+					<img src="images/logo.png" alt="Логотип компании Гипсолит">					
+				</div><!-- /.footer-item -->
+				<div class="footer-item footer-contacts">
+					<p><a href="#" class="footer-phone">+3 050 5555555</a></p>
+					<p><a class="footer-link" href="mailto:gipsolit@gipsolit.ua"> gipsolit@gipsolit.ua </a></p>
+					<p>Пн-Пт с 9:00 до 18:00</p>
+				</div><!-- /.footer-item -->
+				<div class="footer-item footer-developer">
+					<p>Разработка сайта:</p>
+					<img src="images/logo-developer.jpg" alt="IT company WWW" height="100px">
+				</div><!-- /.footer-item -->
+			</div><!-- /.footer-row -->
+		</div><!-- /.wrapper -->
+	</footer>
+
+	<!-- modal windows -->
+	<!-- get consultation -->
+<div class="popup" data-popap-target="recallForm" id="recallForm">
+	<div class="popup-dialog">
+		<div class="popup-content">
+			<button class="popup-close">&times;</button>
+			<h4 class="popup-header">
+				Заинтересовало?
+			</h4>			
+			<p> Оставьте свои контактные данные <br> для связи</p>
+			<div class="popup-form">
+				<form class="form" action="#" method="POST">
+					<label for="recName">Ваше имя</label>
+					<input id="recName" type="text" required>
+					<label for="recPhone">Номер телефона</label>
+					<input id="recPhone" type="tel" required>
+					<label for="recMassage">Cообщение</label>
+					<textarea name="text" id="recMassage" cols="30" rows="5"></textarea><br>
+					<button class="btn">Отправить</button>
+				</form>
+			</div><!-- /.popup-form -->
+		</div><!-- /.popup-content -->
+	</div><!-- /.popup-dialog -->
+</div><!-- /.popup -->
+
+	
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libs/jquery-3.3.1.min.js"><\/script>')</script>
+  <!-- Подключение скрипта слайдера  -->
+  <script src="libs/slick/slick.min.js"></script>
+  <!-- Инициализируем слайдер  -->   
+  <script src="js/script.js"></script>
+  <!-- fotorama.css & fotorama.js. -->
+	<!--<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">-->
+	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>-->
+	<link  href="css/fotorama.css" rel="stylesheet">
+	<script src="libs/fotorama.js"></script>
+  <script src="libs/wow.min.js"></script>
+  <script src="libs/jquery.maskedinput.min.js"></script>
+</body>
+</html>

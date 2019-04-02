@@ -1,0 +1,937 @@
+﻿@font-face 
+  font-family: 'ProximaNova_Rg'
+  src: url('../fonts/ProximaNova-Regular.eot')
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'ProximaNova_Bd'
+  src: url('../fonts/ProximaNova-Bold.eot')
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg')
+  font-weight: bold
+  font-style: normal
+
+=reg()
+	font-family: 'ProximaNova_Rg', sans-serif
+=bold()
+	font-family: 'ProximaNova_Bd', sans-serif
+
+@import colors
+@import smartGrid
+
+
++reset()
+.debug
+	+debug($dbbgcol, $dboutlcol)
+
+iframe
+	width: 100%
+	height: 400px
+	border: none
+
+
+html
+	font-size: 10px	
+body
+	+reg()
+section
+	padding: 10rem 0
+	+md(padding-top, 6rem)
+	+sm(padding-top, 4rem)
+.btn
+	font-size: 1.2rem
+	background-color: $btnColor
+	padding: 1rem 3rem
+	border: 1px solid darken($btnColor, 5%)
+	border-radius: 0.8rem
+	color: $white
+	text-transform: uppercase	
+	transition: all 0.5s
+	&:hover
+		cursor: pointer
+		background-color: darken($btnColor, 5%)		
+.wrapper
+	+wrapper()
+
+.form
+	font-size: 1.6rem
+	width: 85%
+	margin: 0 auto
+	text-align: center
+	&-inp, &-textarea	
+		box-sizing: border-box					
+		margin: 0 0
+		border: 1px solid $borderInp
+		border-radius: 0.8rem
+		width: 100%
+		padding: 1.7rem 
+	&-lbl
+		font-size: 1.3rem
+		display: inline-block
+		position: relative
+		top: 1.1rem
+		padding: 0.5rem						
+		background-color: $white
+	&-btn
+		box-sizing: border-box
+		font-size: 1.6rem
+		width: 100%
+		padding: 1.7rem
+		margin: 2.5rem 0 1.5rem	
+	
+
+
+header
+	background: #fff url(../images/main-bg.jpg) center center no-repeat
+	background-size: cover
+	+md(background-position, top right)
+	+sm(background-position, top left)
+	section:first-child
+		padding: 3rem 0	
+.top	
+	&-row
+		+row-flex()
+		justify-content: space-between
+	&-item
+		+col()				
+		display: flex
+		align-items: center
+	&-logo
+		+size(3)
+		+size-md(4)
+		+size-sm(5)
+		+size-xs(12)
+		justify-content: flex-start
+	&-connect
+		+size(9)
+		+size-md(8)
+		+size-sm(7)
+		+size-xs(12)				
+		justify-content: flex-end
+		flex-wrap: wrap	
+		@media screen and (max-width: 560px) 
+			justify-content: center
+			padding-top: 1.5rem
+	&-phone
+		+bold()					
+		font-size: 2rem
+		color: $text					
+		margin-right: 3rem
+		text-decoration: none					
+		@media screen and (max-width: 662px)					
+			padding-top: 1.5rem	
+			padding-bottom: 1.5rem									
+
+.introduce	
+	.int-row
+		+row-flex()
+		justify-content: space-between
+		+sm(justify-content, center)			
+		.int-item
+			+col()
+			display: flex
+			flex-direction: column				
+		.int-info
+			+size (7)
+			+size-md(7)
+			+size-sm(12)
+			+size-xs(12)				
+			align-items: flex-start
+			+sm(align-items, center)				
+			h1
+				+bold()
+				font-size: 4rem
+				text-transform: uppercase
+				line-height: 1.45
+				+sm(text-align, center)	
+				@media screen and (max-width: 512px)
+					font-size: 3rem
+				@media screen and (max-width: 380px)
+					font-size: 2.5rem				
+			p 
+				display: block
+				font-size: 2.4rem
+				margin-top: 4rem
+			.int-banner						
+				font-size: 1.8rem
+				line-height: 3rem
+				text-align: center
+				padding: 3rem 5rem
+				background-color: $iconsColor
+				color: $white
+				strong
+					+bold()
+					font-size: 3rem
+			.int-trigger
+				+bold()
+				text-transform: uppercase
+				font-size: 2.2rem
+				margin: 3rem 0 2rem 0
+		.int-form
+			+size(4)
+			+size-md(5)
+			+size-sm(8)
+			+size-xs(12)								
+			align-items: flex-end									
+			@media screen and (max-width: 780px)
+				align-items: center
+				align-self:: center
+				margin-top: 3rem
+			&-container
+				display: flex
+				flex-direction: column					
+				background-color: $white
+				opacity: 0.8
+				width: 90%
+				text-align: center
+				padding-bottom: 3rem										
+			&-header
+				font-size: 1.8rem
+				margin: 5rem 4rem 1rem 4rem						
+				strong
+					font-size: 2rem														
+			small
+				font-size: 1.3rem						
+
+.advantages
+	&-header
+		+bold()
+		margin: 2rem 0 10rem
+		font-size: 3.6rem	
+		text-align: center	
+	&-block
+		text-align: center
+	&-img
+		height: 8rem
+		img
+			display: block
+			margin: 0 auto	
+	h3
+		+bold()
+		font-size: 2rem
+		margin: 3rem auto
+	p
+		font-size: 1.4rem
+		display: inline-block
+		width: 80%
+
+						
+.slick-active
+	outline: none	
+.arrow, .feedback-slider-btn
+	top: 50%	
+	transform: translateY(-50%)
+	position: absolute	
+	z-index: 99	
+	width: 2rem
+	height: 2rem
+	border: none	
+	cursor: pointer		
+.prev	
+	left: 0
+	background: url(../images/arrow-left.svg)	center no-repeat	
+	background-size: 70%
+.next
+	right: 0
+	background: url(../images/arrow-right.svg)	center no-repeat	
+	background-size: 70%
+.feedback-prev-btn
+	left: 0
+	background: url(../images/feedBack/prev.png)	center no-repeat	
+	background-size: 50%
+.feedback-next-btn
+	right: 0
+	background: url(../images/feedBack/next.png)	center no-repeat	
+	background-size: 50%
+	
+
+.prices
+	background: $iconsColor url(../images/prices-bg.jpg) center 
+	&-row
+		+row-flex()
+		justify-content: flex-end
+		@media screen and (max-width: 630px)			
+			justify-content: center			
+	&-item
+		+col()
+		+size(4)
+		+size-md(6)
+		+size-sm(6)		
+		display: flex
+		flex-direction: column		
+		align-items: center
+		@media screen and (max-width: 630px)
+			+size(10)
+			+size-xs(12)						
+	&-header
+		color: $white
+		h2
+			+bold()			
+			font-size: 3.6rem	
+		p
+			font-size: 1.4rem
+			margin-top: 3rem
+	&-btn
+		margin: auto auto
+		@media screen and (max-width: 630px)
+			margin: 3rem 0
+	.price
+		&-row
+			padding-top: 3rem
+			+row-flex()
+			justify-content: center
+		&-item
+			+col()
+			+size(4)
+			+size-md(4)
+			+size-sm(6)			
+			+size-xs(12)
+			display: flex
+			flex-direction: column
+			align-items: center
+			align-content: flex-end
+			background-color: $white
+			box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17)
+			padding: 1rem 2rem 4rem
+			text-align: center
+			@media screen and (max-width: 780px)				
+				margin-bottom: 2rem
+				&:last-child
+					margin-bottom: 0
+			h4
+				+bold()
+				font-size: 1.9rem
+				margin: 2rem 0
+				flex-grow: 1
+			img
+				margin-bottom: 2rem
+		&-tag
+			font-size: 1.9rem
+			margin-bottom: 2rem
+			+bold()			
+		&-properties
+			text-align: center
+			min-height: 15rem
+			font-size: 1.7rem
+			line-height: 2.5rem
+			+xs(min-height, auto)
+			li
+				&::before
+					content: ''
+					display: inline-block
+					margin-right: 1rem
+					width: 1.4rem
+					height: 1.4rem
+					vertical-align: middle
+					background: url(../images/check.png) no-repeat center
+					background-size: 100%
+		&-btn
+			margin-top: 1rem
+
+.feedback
+	background: url(../images/feedback-bg.jpg) no-repeat center
+	background-size: cover
+	position: relative
+	@media screen and (max-width: 960px)
+		.fotorama			
+			margin-bottom: 3rem		
+	&-prev-btn
+		left: -4rem
+		@media screen and(max-width: 780px)
+			left: -2rem
+	&-next-btn
+		right: -4rem
+		@media screen and(max-width: 780px)
+			right: -2rem
+	&-header
+		+bold()
+		margin: 2rem 0 10rem
+		font-size: 3.6rem	
+		text-align: center
+	&-slider
+		padding: 5rem 6rem
+		background-color: $white
+		box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11)
+		&-btn
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			width: 4rem
+			height: 5rem
+			background-color: $iconsColor
+			border: none
+			img
+				width: 50%
+		&_item
+			.row
+				+row-flex()
+				justify-content: center
+				&-part
+					+col()
+					+size(6)
+					+size-md(8)
+					+size-sm(10)
+					+size-xs(12)
+					p
+						font-size: 1.6rem
+						margin-bottom: 1rem
+						strong
+							+bold()
+					.media
+						display: flex
+						align-items: flex-start
+						padding: 1rem	1rem 1rem 0					
+						margin: 3rem 0 1rem 0						
+						font-size: 1.4rem
+						img 
+							width: 60px
+							margin: 0 1rem 0 0
+							border-radius: 50%
+						&-body
+							flex-grow: 1
+							padding-top: 0.5rem
+							h3
+								+bold()
+	&-text
+		font-style: italic
+		padding: 1rem
+		border: 2px solid $iconsColor
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: -2.2rem
+			left: 5rem
+			width: 2rem
+			height: 2rem
+			background-color: $white
+			border: 2px solid $iconsColor
+			border-bottom: none
+			border-top-right-radius: 100px
+	.fb-form-row
+		+row-flex()
+		justify-content: center
+		.row-item
+			+col()
+			+size(7)
+			+size-md(9)
+			+size-sm(12)
+			+size-xs(12)
+			.feedback-form
+				text-align: center
+				background-color: $white
+				margin-top: 5rem
+				border: 1px solid green				
+				h3
+					+bold()
+					font-size: 2rem
+					margin-top: 4rem							
+				.fbf-row
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					/*margin-top: 2rem*/
+					.fb-form-part
+						display: border-box
+						width: 47%
+						@media screen and (max-width: 550px)
+							width: 100%
+				button
+					width: 47%
+					margin-bottom: 4rem
+					@media screen and (max-width: 550px)
+						width: 100%
+	.fb-hand
+		position: absolute
+		bottom: 0
+		left: 0
+		max-width: 30%
+
+
+.scheme
+	background: url(../images/scheme-bg.jpg) center no-repeat 
+	background-size: cover
+	+xs(background, none)
+	&-header
+		+bold()
+		margin: 2rem 0 
+		font-size: 3.6rem	
+		text-align: center
+	h3
+		+bold()
+		font-size: 2rem
+	p
+		font-size: 1.2rem
+		text-align: center
+		margin-bottom: 5rem
+	&-row
+		+row-flex()
+		+xs(justify-content, center)		
+	&-item
+		+col()
+		+size(3)		
+		+size-md(3)
+		+size-sm(5)
+		+size-xs(10)		
+		@media screen and (min-width: 560px)
+			+shift-right(1)
+		@media screen and (max-width: 560px)
+			display: flex
+			flex-direction: column
+			align-items: center
+			align-content: flex-end					
+		p
+			text-align: left
+			+xs(text-align, center)
+
+
+.all-inclusive
+	.incl-header
+		h2		
+			+bold()
+			margin: 2rem 0 
+			font-size: 3.6rem	
+			text-align: center
+		p
+			text-align: center
+			font-size: 1.3rem
+			margin-bottom: 5rem
+	.incl	
+		&-row
+			+row-flex()
+			justify-content: flex-start
+			+xs(justify-content, center)
+		&-item
+			+col()
+			+size(3)
+			+size-md(4)
+			+size-sm(6)
+			+size-xs(11)
+			margin-bottom: 2rem
+			display: flex
+			justify-content: flex-start
+			&-left
+				display: inline-block				
+				width: 6rem				
+				.circle-border	
+					text-align: center								
+					display: inline-block
+					width: 5rem
+					height: 5rem
+					padding: 0.2rem
+					border: 2px solid $iconsColor
+					border-radius: 50%					
+					line-height: 4.5rem					
+				.circle						
+					display: inline-block
+					background-color: $iconsColor
+					width: 98%
+					height: 98%
+					border-radius: 50%
+					color: $white
+					+bold()
+					font-size: 2rem
+					text-align: center					
+			&-body
+				margin: 1rem 0 0 1rem
+				text-align: left
+				h4
+					display: inline-block
+					+bold()
+					font-size: 1.6rem
+				p
+					font-size: 1.3rem
+
+
+
+.dread
+	position: relative	
+	&-header			
+		+bold()
+		margin-bottom: 7rem
+		font-size: 3.6rem	
+		text-align: center
+	&-row
+		+row-flex()
+		justify-content: space-between
+		@media screen and (max-width: 780px)
+			justify-content: center
+	&-item
+		+col()
+		+size(5)
+		+size-md(5)
+		+size-sm(10)
+		+size-xs(12)
+		border: 4px solid
+		padding: 2rem
+		@media screen and (max-width: 780px)
+			margin-bottom: 2rem
+		h4
+			+bold()
+			font-size: 2.1rem
+		ul
+			padding: 2rem	
+			padding-left: 0		
+			li	
+				font-size: 1.2rem
+				margin-bottom: 3rem
+				position: relative
+				padding-left: 3rem
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 50%
+					transform: translateY(-50%)
+					margin-right: 1rem
+					width: 2rem
+					height: 2rem
+					background-size: 100%	
+				&:last-child
+					margin-bottom: 0		
+	&-list_problems
+		border-color: $dreadColor
+		h4
+			opacity: 0.5
+		li
+			&::before	
+				background: url(../images/cancel.png) no-repeat center						
+	&-list_solutions
+		border-color: $iconsColor
+		li
+			&::before				
+				background: url(../images/check.png) no-repeat center
+	&-women
+		position: absolute
+		left: 50%
+		bottom: 0	
+		height: 75%	
+		margin-left: -15%	
+		@media screen and (max-width: 890px)
+			margin-left: -22%
+		@media screen and (max-width: 780px)
+			display: none
+
+.materials
+	text-align: center
+	background: $white url(../images/material-bg.jpg) center no-repeat
+	background-size: cover
+	&-header
+		h2		
+			+bold()
+			margin: 2rem 0 
+			font-size: 3.6rem			
+		p
+			text-align: center
+			font-size: 1.3rem
+			margin-bottom: 5rem
+	&-slider
+		text-align: center	
+	&-img		
+		img
+			display: block
+			margin: 0 auto
+	&-item
+		h3
+			+bold()
+			font-size: 2rem
+			margin: 2rem auto
+		p
+			font-size: 1.4rem		
+	&-link		
+		text-decoration: none	
+		display: inline-block
+		font-size: 1.2rem
+		color: $iconsColor
+		margin-top: 1.5rem
+		border-bottom: 1px dotted $iconsColor
+		&:hover
+			color: darken($iconsColor, 10%)
+			cursor: pointer
+	&-phone
+		+bold()
+		text-decoration: none
+		color: $text
+	&-info
+		font-size: 1.3rem
+		margin-top: 3rem
+
+.tour
+	background: #fff url(../images/tour-bg.jpg) center no-repeat
+	background-size: cover
+	+md(background-position, top right)
+	+sm(background-position, top left)	
+	&-row
+		+row-flex()
+		justify-content: space-between
+		+sm(justify-content, center)
+	&-item
+		+col()
+	&-info		
+		+size(5)
+		+size-md(7)
+		+size-sm(12)
+		+size-xs(12)
+		align-items: flex-start
+		@media screen and (max-width: 780px)
+			align-items: center
+			text-align: center
+		h2
+			+bold()
+			font-size: 4rem
+			text-transform: uppercase
+			line-height: 1.45
+			@media screen and (max-width: 512px)
+				font-size: 3rem
+			@media screen and (max-width: 380px)
+				font-size: 2.5rem	
+		p 
+			display: block
+			font-size: 2.4rem
+			margin-top: 4rem
+	&-form		
+		+size(4)
+		+size-md(5)
+		+size-sm(7)
+		+size-xs(11)
+		align-items: center
+		align-self: flex-end
+		@media screen and (max-width: 780px)				
+			margin-top: 3rem
+		&-container							
+			background-color: $white
+			opacity: 0.8
+			width: 90%
+			text-align: center
+			padding: 2rem 0
+			margin-left: 10%
+			+sm(margin, auto)
+			@media screen and (max-width: 1110px)				
+				margin-left: 0
+				width: 100%
+		&-header
+			font-size: 1.8rem
+			margin: 4rem	
+		small
+			font-size: 1.3rem
+
+.addServices
+	background-color: $bgServices
+	color: $white
+	&-header
+		text-align: center		
+		h2		
+			+bold()
+			margin: 2rem 0 
+			font-size: 3.6rem			
+		p
+			text-align: center
+			font-size: 1.3rem
+			margin-bottom: 7rem
+	&-row
+		+row-flex()
+		justify-content: center
+	&-item
+		+col()
+		+size(4)
+		+size-md(4)
+		+size-sm(6)
+		+size-xs(12)
+		display: flex
+		flex-direction: column
+		align-items: center
+		+sm(margin-bottom, 2rem)		
+		h3
+			margin: 2rem auto
+			font-size: 2rem
+
+.contacts
+	background: #fff url(../images/contacts-bg.jpg) center no-repeat
+	background-size: cover
+	&-row
+		+row-flex()
+		justify-content: space-between
+		+sm(justify-content, center)
+	&-item
+		+col()
+	&-info		
+		+size(6)
+		+size-md(7)
+		+size-sm(12)
+		+size-xs(12)
+		align-items: flex-start
+		font-size: 1.2rem
+		h2		
+			+bold()
+			margin: 3rem 0 
+			font-size: 3.6rem	
+		p
+			margin: 2rem 0
+	&-link		
+		text-decoration: none	
+		display: inline-block		
+		color: $text		
+		border-bottom: 1px dotted $text
+		&:hover
+			color: darken($text, 10%)
+			cursor: pointer
+	&-phone
+		+bold()
+		text-decoration: none
+		color: $text
+	&-form		
+		+size(4)
+		+size-md(5)
+		+size-sm(7)
+		+size-xs(9)		
+		align-items: center
+		align-self: flex-end
+		@media screen and (max-width: 780px)				
+			margin-top: 3rem
+		@media screen and (max-width: 400px)				
+			+size(12)
+		&-container							
+			background-color: $white
+			opacity: 0.8
+			width: 90%
+			text-align: center
+			padding: 2rem 0
+			margin-top: 4rem
+			margin-left: 10%
+			+sm(margin, auto)
+			@media screen and (max-width: 1110px)				
+				margin-left: 0
+				width: 100%
+		&-header
+			font-size: 1.8rem
+			margin: 2.5rem 0 1.5rem
+		small
+			font-size: 1.3rem
+
+footer
+	padding: 4rem 0
+.footer
+	&-row
+		+row-flex()
+		justify-content: space-between
+		+sm(justify-content, center)
+	&-item
+		+col()
+		+size(3)
+		+size-sm(4)
+		display: flex		
+		flex-direction: column
+		align-content: center
+	&-logo
+		+size-xs(6)
+		align-items: flex-start		
+	&-contacts
+		+size-xs(10)
+		align-items: center
+		justify-content: space-around
+		@media screen and (max-width: 560px)
+			order: -1
+			margin-bottom: 2rem
+			p
+				margin: 0.5rem 0
+
+	&-developer
+		+size-xs(6)		
+		align-items: flex-end	
+	&-link		
+		text-decoration: none	
+		display: inline-block		
+		color: $text		
+		border-bottom: 1px dotted $text
+		&:hover
+			color: darken($text, 10%)
+			cursor: pointer
+	&-phone
+		+bold()
+		font-size: 1.5rem
+		text-decoration: none
+		color: $text
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+.popup
+	display: none	
+	position: fixed
+	left: 0
+	top: 0
+	bottom: 0
+	right: 0
+	width: 100vw
+	height: 100vh
+	z-index: 9
+	background-color: rgba(0, 0, 0, 0.5)
+	&-content		
+		position: fixed
+		top: 10%
+		left: 50%
+		transform: translateX(-50%)
+		padding: 2rem 4rem
+		background-color: $white
+		text-align: center
+	&-close
+		position: absolute
+		top: -1.5rem
+		right: -2rem
+		width: 2rem
+		font-size: 3rem
+		text-align: center
+		color: $white
+		border: none
+		background-color: transparent 
+	&-header
+		font-size: 1rem
+		+bold()
+.showPopap 
+	display: block
+	
+		
+
+.popup-form
+	margin-top: 3rem
+	text-align: center
+	input, textarea
+		box-sizing: border-box
+		display: block
+		width: 100%
+		border: 1px solid $borderInp
+		padding: 1.7rem
+		margin: 2rem 0
+		border-radius: 5px
+	label
+		font-size: 1.3rem
+		box-sizing: border-box		
+		position: absolute		
+		transform: translateX(-50%) translateY(-50%)
+		padding: 0.5rem
+		background-color: $white			
+	button
+		display: block
+		width: 100%	
+		height: 5.5rem
+		font-size: 1.6rem
+.popup-close:hover
+	color: darken($white, 15%)
+	cursor: pointer
+
+
+
