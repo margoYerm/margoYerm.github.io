@@ -1,0 +1,99 @@
+﻿@media (max-width:767px) 		
+	.top-nav		
+		&_btn
+			display: block						
+		&_menu			
+			flex-direction: column
+			display: none					
+			li
+				line-height: 2
+				padding: 1rem	0
+				margin-right: 0				
+				a
+					&::after
+						display: none
+			&__active
+				display: flex											
+	.left-sidebar
+		&_btn
+			display: block			
+		&_menu
+			display: none
+			&__active
+				display: block							
+		&_object
+			display: none
+	.directions-block		
+		img
+			position: absolute
+			bottom: 0px
+			left: 20%			
+	.copy
+		text-align: center
+		small
+			margin: 36px auto
+	.footer
+		&_contacts
+			text-align: left
+			margin-top: 2rem	
+	.object-card
+		img
+			display: block
+			margin: 0 auto
+
+
+
+
+@media (min-width:768px) and (max-width:992px)		
+	.top-nav
+		&_btn
+			display: block			
+			outline: 0 !important							
+		&_menu				
+			display: none	
+			margin-top: 1.5rem			
+			li
+				line-height: 2
+				margin-right: 0				
+				a
+					&::after
+						display: none			
+			&__active
+				display: flex
+				margin-bottom: 0
+				justify-content: space-around
+	.left-sidebar
+		&_object
+			display: none
+		&_btn
+			display: block
+			outline: 0 !important
+		&_menu
+			display: none
+			&__active
+				display: block
+	.directions-block		
+		img
+			position: absolute
+			bottom: 0px
+			left: 0
+	.footer
+		.copy
+			small
+				margin-bottom: 30px
+		&_contacts
+			text-align: left	
+
+
+@media (min-width:992px) and (max-width:1199px)
+	.top-nav_btn
+		display: none
+	.top-nav_menu
+		display: flex
+		justify-content: space-between
+		li
+			margin: 0
+			margin-left: 2rem
+	 	
+
+				
