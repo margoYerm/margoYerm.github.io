@@ -1,4 +1,6 @@
 # margoYerm.github.io
 Learning projects
 
-[WEB STUDIO](https://margoyerm.github.io/webstudio/) - parallax and hover effects
+[Web studio](https://margoyerm.github.io/webstudio/) - parallax and hover effects
+
+[Styles conference](https://margoyerm.github.io/webstudio/) - multipage website
