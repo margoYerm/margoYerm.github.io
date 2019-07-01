@@ -1,5 +1,5 @@
 # margoYerm.github.io
-Learning projects
+My projects
 
 [Web studio](https://margoyerm.github.io/webstudio/) - parallax and hover effects
 
