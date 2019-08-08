@@ -630,10 +630,10 @@ img {
 	padding: 2.5rem 0;
 	cursor: pointer;
 }
-#addProduct:hover {
+.addToBasket:hover {
 	background-color: #f79454;
 }
-#addProduct:active {
+.addToBasket:active {
 	background-color: #99DADC;
 	border: none;
 }
@@ -882,6 +882,10 @@ img {
 	outline: 1px solid #99DADC;		
 }
 .buyBtn {/*button to buy on product details page*/
+	background-color: #99DADC;
+	border: 1px solid #40E0D0;
+}
+.buyBtn:hover {
 	background-color: #99DADC;
 	border: 1px solid #40E0D0;
 }
