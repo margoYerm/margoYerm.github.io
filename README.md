@@ -11,7 +11,7 @@ My projects
 
 [Web studio](https://margoyerm.github.io/webstudio/) - parallax and hover effects
 
-
+[Bouncy](https://margoyerm.github.io/bouncy/app/) - This project is developing.
 
 
 
