@@ -1,0 +1,932 @@
+﻿@font-face 
+  font-family: 'Big John'
+  src: url('../fonts/BigJohn.eot')
+  src: url('../fonts/BigJohn.eot?#iefix') format('embedded-opentype'), url('../fonts/BigJohn.woff2') format('woff2'), url('../fonts/BigJohn.woff') format('woff'), url('../fonts/BigJohn.ttf') format('truetype'), url('../fonts/BigJohn.svg#BigJohn') format('svg')
+  font-weight: normal
+  font-style: normal
+@font-face	
+  font-family: 'fontello'
+  src: url('../fonts/fontello.eot?17009240')
+  src: url('../fonts/fontello.eot?17009240#iefix') format('embedded-opentype'), url('../fonts/fontello.woff2?17009240') format('woff2'), url('../fonts/fontello.woff?17009240') format('woff'), url('../fonts/fontello.ttf?17009240') format('truetype'), url('../fonts/fontello.svg?17009240#fontello') format('svg')
+  font-weight: normal
+  font-style: normal
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300,900');
+=os-reg()
+	font-family: 'Open Sans', sans-serif
+	font-weight: 400
+=os-bold()
+	font-family: 'Open Sans', sans-serif
+	font-weight: 700
+=ssp-light()
+	font-family: 'Source Sans Pro', sans-serif
+	font-weight: 300
+=ssp-black()
+	font-family: 'Source Sans Pro', sans-serif
+	font-weight: 900
+
+@import fontello
+@import colors
+@import smart-grid
+
+
+
++reset()
+.debuger
+	+debug($background, $outline)
+.clearfix
+	+clearfix()
+
+html 
+	font-size: 10px
+body	
+	+os-reg()
+	letter-spacing: 0.07rem
+	line-height: 1.5
+
+.logo
+	font-family: 'Big John', sans-serif
+	font-size: 2.45rem	
+
+.wrapper
+	+wrapper()
+
+.btn 
+	display: inline-block
+	border: 1px solid $h-text
+	border-radius: 2rem
+	padding: 1rem 3rem
+	text-decoration: none
+	font-size: 1.6rem
+
+.show
+	display: block
+
+a.icon
+	background-color: $main-text
+.icon
+	display: inline-block	
+	color: $white
+	text-decoration: none
+	padding: 2.5rem
+	margin: 1.5rem	
+	border-radius: 50%
+	&:hover
+		background-color: $active-icons
+	&_light
+		background: url(../images/icon-light.png) no-repeat center center
+	&_mouse
+		background: url(../images/icon-mouse.png) no-repeat center center
+	&_heart
+		background: url(../images/icon-heart.png) no-repeat center center	
+	&_plug
+		background: url(../images/icon-plug.png) no-repeat center center	
+	&_game
+		background: url(../images/icon-game.png) no-repeat center center
+	&_roller
+		background: url(../images/icon-roller.png) no-repeat center center
+	&_tools
+		background: url(../images/icon-tools.png) no-repeat center center
+	&_link
+		background: url(../images/icon-link.png) no-repeat center center
+
+#first-screen
+	background: url(../images/bg-01_header.jpg) no-repeat center center
+	background-size: cover	
+	min-height: 40rem
+	color: $white
+.top
+	max-width: 1200px
+	margin: 0 auto	
+	padding-top: 4rem
+	.logo-box
+		h1
+			@media screen and (max-width: 1220px)
+				margin-left: 1rem
+	&-wrapper		
+		margin-top: -2.6rem
+		position: relative
+		@media screen and (max-width: 819px)
+			margin-top: 1rem
+	.menu-toggle
+		cursor: pointer
+		padding: 1rem
+		display: none
+		@media screen and (max-width: 819px)
+			display: inline-block	
+			position: absolute
+			top: -5rem
+			right: 1rem
+		.menu-icon
+			font-size: 2rem	
+	&-nav-menu
+		font-size: 1.6rem
+		transition: all 2s ease
+		z-index: 1000
+		@media screen and (max-width: 819px)
+			display: none
+			position: absolute
+			right: 2rem			
+			background: rgba(0, 0, 0, 0.3)
+			padding: 1rem 
+			border-radius: 0.5rem			
+		li
+			float: right
+			@media screen and (max-width: 819px)
+				float: none
+				line-height: 1.8			
+			a					
+				box-sizing: border-box		
+				color: $white
+				text-decoration: none		
+				padding: 0.5rem 2rem
+				cursor: pointer				
+				transition: border 0.5s
+				margin: auto
+				&:hover				
+					border: 1px solid $white
+					border-radius: 2rem
+					@media screen and (max-width: 819px)
+						border: none
+
+
+.introduce
+	&-row
+		+row-flex()		
+		flex-direction: column
+		align-items: center		
+	h2
+		+ssp-light()
+		font-size: 3.5rem
+		text-transform: uppercase
+		margin: 21rem 0 3.5rem
+		letter-spacing: 1rem
+		text-align: center
+	p		
+		text-align: center
+		font-size: 1.6rem
+		line-height: 1.7
+	.arrow-down 
+		color: $white
+		font-size: 1.6rem
+		padding: 0.7rem
+		border: 1px solid $white
+		border-radius: 50%		
+		margin: 22rem 0 7rem		
+		&:hover
+			background-color: $active-icons
+.about
+	&-row
+		+row-flex()
+	&-item
+		+col()
+	&-content
+		+size(5)
+		+shift-left(2)
+		+size-md(9)	
+		+size-xs(12)
+		
+		@media screen and (max-width: 992px)
+			+shift-left(0)
+
+		h3
+		 	+ssp-light()
+		 	font-size: 2rem
+		 	text-transform: uppercase
+		 	letter-spacing: 0.4rem
+		 	color: $h-text
+		 	margin: 10rem 0 5rem
+		p		 	
+		 	font-size: 1.4rem
+		 	color: $main-text		 	
+		.btn
+			color: $h-text
+			margin: 3.5rem 0 10rem
+			@media screen and (max-width: 576px)
+				margin: 10rem auto 5rem
+			&:hover
+				background-color: $active-icons
+			
+
+	&-img
+		+size(3)
+		+shift-left(1)
+		+size-md(3)
+		display: flex
+		align-items: center
+
+		@media screen and (max-width: 992px)
+			+shift-left(0)
+		@media screen and (max-width: 576px)
+			display: none
+		
+.details
+	background-color: $bg-details
+	padding-bottom: 10rem
+	&-row
+		+row-flex()
+	&-item
+		+col()
+	&-about
+		+size(12)
+		display: flex
+		flex-direction: column
+		align-items: center
+		h3
+			+ssp-light()
+			font-size: 2rem
+			text-transform: uppercase
+			letter-spacing: 0.4rem
+			color: $h-text
+			margin: 8rem 0 4rem
+		p
+			font-size: 1.4rem
+			color: $main-text
+			text-align: center
+			line-height: 2
+	&-links
+		margin: 6rem 0
+
+	&-ideas
+		+shift-left(1)
+		@media screen and (max-width: 992px)
+			+shift-left(0)
+	h4
+		font-size: 2rem
+		margin-bottom: 4rem
+	&-column
+		+shift-left(1)		
+		justify-content: center
+		@media screen and (max-width: 992px)
+			+shift-left(0)
+		p
+			font-size: 1.6rem
+			color: $main-text
+		.active-text
+			+os-bold()
+			color: $active-icons
+	&-column_first
+		+size(3)
+		+size-md(4)
+		+size-sm(10)
+		@media screen and (max-width: 992px)
+			+shift-right(1)
+		@media screen and (max-width: 720px)
+			margin-bottom: 5rem
+
+	&-column_second
+		+size(6)		
+		+shift-right(1)		
+		+size-md(6)
+		+size-sm(12)
+		@media screen and (max-width: 992px)
+			+shift-right(0)
+
+.featured	
+	&-row
+		+row-flex()
+	&-item
+		+col()		
+	&-column
+		+size(12)
+		display: flex
+		flex-direction: column
+		align-items: center
+		h3
+			+ssp-light()
+			font-size: 2rem
+			text-transform: uppercase
+			letter-spacing: 0.4rem
+			color: $h-text
+			margin: 8rem 0 4rem
+		p
+			font-size: 1.4rem
+			color: $main-text
+			text-align: center
+			line-height: 2
+			margin-bottom: 6rem
+	&-container
+		width: 100%
+		position: relative		
+	&-offset
+		padding-bottom: 25%
+		height: 0
+		background-color: $active-icons
+		@media screen and (max-width: 920px)
+			padding-bottom: 22%
+		@media screen and (max-width: 720px)
+			padding-bottom: 90%
+		@media screen and (max-width: 576px)
+			padding-bottom: 105%
+		@media screen and (max-width: 400px)
+			padding-bottom: 120%
+		@media screen and (max-width: 320px)
+			padding-bottom: 100%		
+	&-projects
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		overflow: hidden
+		flex-grow: 1
+		flex-shrink: 1
+		flex-basis: 100%
+		box-sizing: border-box
+		align-content: center
+		@media screen and (min-width: 1600px)
+			align-content: stretch
+	&-project
+		display: flex		
+		flex-direction: row
+		flex-grow: 1
+		flex-shrink: 1		
+		width: 25%
+		position: relative
+		margin: 0
+		padding: 0
+		min-height: 30rem
+		@media screen and (max-width: 720px)
+			width: 50%
+		@media screen and (max-width: 400px)
+			width: 50%
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0, 0, 0, 0.7)
+			opacity: 1
+			transition: opacity 0.3s
+		&:hover::before
+			opacity: 0
+		a
+			width: 100%
+			height: 100%
+		img
+			display: block
+			width: 100%
+			height: 100%
+		h3
+			+ssp-light()
+			text-transform: uppercase
+			letter-spacing: 0.4rem
+			font-size: 2rem
+			color: $white
+			position: absolute
+			opacity: 1
+			top: 50%
+			transform: translateY(-50%)
+			left: 50%
+			transform: translateX(-50%)		
+		&:hover h3
+			opacity: 0	
+	&-double-project
+		width: 50%
+		@media screen and (max-width: 720px)
+			width: 100%		
+	&-bg
+		background-image: url(../images/bg-02_features.jpg)
+		background-repeat: no-repeat		
+		background-size: cover
+		&_owerlay
+			background-color: rgba(25, 189, 154, 0.8)
+			padding-bottom: 4.5rem
+			padding-top: 4.5rem
+	&-row_bottom
+		+row-flex()
+	&-item_comment
+		+size(9)
+		+size-md(8)
+		+size-sm(7)
+		+size-xs(12)
+		display: flex
+		align-items: center
+		p
+			font-size: 2rem
+			color: $white
+	&-item_btn
+		+size(3)
+		+size-md(4)	
+		+size-sm(5)
+		+size-xs(12)			
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		@media screen and (max-width: 576px)
+			justify-content: center
+			margin-top: 3rem
+	&-btn
+		border-color: $white
+		color: $white
+		&:hover
+			background-color: $active-icons
+
+.services
+	margin-bottom: 13rem
+	&-row
+		+row-flex()
+	&-header
+		+col()
+		+size(12)
+		display: flex
+		flex-direction: column
+		align-items: center		
+		h3
+			+ssp-light()
+			font-size: 2rem
+			text-transform: uppercase
+			letter-spacing: 0.4rem
+			color: $h-text
+			margin: 8rem 0 4rem
+		p
+			font-size: 1.4rem
+			color: $main-text
+			text-align: center
+			line-height: 2
+			margin-bottom: 6rem			
+	&-item
+		+col()
+		&_column
+			display: flex			
+			flex-direction: column			
+			justify-content: flex-start
+		&_icons
+			+size(1)
+			+size-lg(1)
+			+size-md(2)
+			+size-xs(3)
+			align-items: flex-end			
+			.services-first-child
+				margin-top: 0
+		&_notes
+			+size(5)
+			+size-md(10)
+			+size-xs(9)
+			align-items: flex-start
+			h4
+				font-size: 2rem
+				margin-bottom: 3rem
+			p
+				font-size: 1.6rem
+				color: $main-text
+				margin-bottom: 4rem
+				&:last-child
+					margin-bottom: 0
+			.active-text
+				+os-bold()
+				color: $active-icons
+		&_progress
+			+size(6)
+			+size-md(10)
+			+size-sm(10)
+			+size-xs(12)			
+			display: flex
+			flex-wrap: no-wrap
+			justify-content: flex-end	
+			align-items: center
+
+			@media screen and (max-width: 576px)
+				justify-content: space-around
+			@media screen and (max-width: 500px)
+				margin-top: 2rem
+			@media screen and (max-width: 420px)
+				flex-wrap: wrap
+	.progress-wrap
+		display: block
+		box-sizing: border-box
+		width: 125px
+		height: 125px		
+		position: relative
+		margin-left: 2rem
+		@media screen and (max-width: 576px)
+			margin-left: 0
+	.progress-label_smaller
+		font-size: 0.6em
+	.progress-name
+		font-size: 1.4rem
+		text-align: center
+		color: $main-text
+		padding-top: 2rem
+	
+.philosophy
+	background-image: url(../images/bg-05_quotes.jpg) 
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	color: $white
+	&-bg
+		background-color: rgba(33, 33, 33, 0.9)	
+	&-row
+		+row-flex()		
+		position: relative
+	&-text
+		+col()
+		+size(6)
+		+size-md(6)
+		+size-sm(10)
+		+size-xs(12)
+		+shift-right(1)
+		margin-bottom: 10rem
+		z-index: 1000		
+		@media screen and (max-width: 992px)
+			+shift-right(0)
+		@media screen and (max-width: 720px)
+			margin-top: 10rem
+		@media screen and (max-width: 540px)
+			margin-top: 0
+		h4
+			+ssp-light()
+			font-size: 2rem
+			letter-spacing: 0.4rem
+			text-transform: uppercase
+			margin: 8rem 0 6rem
+		blockquote			
+			font-size: 1.6rem
+			margin: 6rem 0 3rem
+		h5
+			+os-bold()
+			font-size: 1.2rem
+			text-transform: uppercase
+			margin-bottom: 1.5rem
+		p
+			font-size: 1.2rem
+			text-transform: uppercase
+			span
+				color: $active-icons			
+	.philosophy-screen
+		width: 350px
+		height: 290px
+		position: absolute
+		top: -2rem
+		right: $offset_one_side	
+		@media screen and (max-width: 540px)
+			display: none
+	.philosophy-logo_text
+		font-family: 'Big John', sans-serif
+		font-size: 3rem
+		position: absolute
+		right: rem
+		top: 7rem
+		right: 12rem
+		@media screen and (max-width: 540px)
+			top: 3rem
+			right: 1rem		
+		span
+			color: $active-icons
+		
+.portfolio
+	background-color: #f3f3f3
+	padding-top: 8rem
+	padding-bottom: 10rem
+	&-row
+		+row-flex()
+	&-header
+		flex-direction: column
+		margin: 8rem 0
+		align-content: center
+		text-align: center
+		h3
+			+ssp-light()
+			font-size: 2rem
+			text-transform: uppercase
+			letter-spacing: 0.4rem
+			color: $h-text
+			margin-bottom: 4rem
+		p
+			font-size: 1.4rem
+			color: $main-text
+			line-height: 2
+	&-menu
+		font-size: 1.6rem
+		justify-content: center
+		align-content: center
+		margin-bottom: 7.5rem
+		&_box	
+			text-align: center		
+			li
+				display: inline-block
+				margin-right: 3rem
+				&:last-child
+					margin-right: 0
+				@media screen and (max-width: 680px)
+					margin-bottom: 2rem
+				a	
+					text-decoration: none				 
+					color: #464646					
+					&::after
+						content: ''
+						display: block
+						width: 60%
+						height: 0.2rem
+						margin: 0 auto
+						text-align: center
+						background-color: $active-icons
+						transform: translateY(1rem) scale(0)
+						transition: all 0.2s
+					&:hover::after
+						transform: translateY(1rem) scale(1)
+	
+	&-box
+		margin: 0 auto
+		display: flex
+		align-items: center
+		justify-content: center
+	&-column
+		+col()
+		+size(3)
+		+size-md(4)
+		+size-sm(6)
+		flex-direction: column
+		margin-left: 2px
+		margin-right: 2px
+		display: flex
+		align-content: center
+		@media screen and (max-width: 500px)
+			+size(11)
+			&:nth-of-type(n+2)
+				display: none
+		@media screen and (max-width: 992px)			
+			&:nth-of-type(n+4)
+				display: none
+		@media screen and (max-width: 720px)			
+			&:nth-of-type(n+3)
+				display: none
+
+	&-item
+		position: relative
+		margin-bottom: 2px
+		img
+			width: 100%
+			height: 100%
+			z-index: 1000
+		&_content
+			box-sizing: border-box
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 99%
+			background-color: rgba(0, 0, 0, 0.8)
+			padding-left: 10%
+			transition: all 0.5s 			
+			opacity: 0
+			&:hover				
+				opacity: 1
+			h4
+				+ssp-light()
+				text-transform: uppercase
+				font-size: 2rem
+				letter-spacing: 0.3rem
+				color: $active-icons
+				margin-top: 30%
+				&::after
+					content: ''
+					display: block
+					width: 2rem
+					height: 0.7px
+					margin: 0 
+					background-color: $active-icons 
+					transform: translateY(0.5rem) 
+			p
+				color: $white
+				font-size: 1.2rem
+				margin-top: 10%		
+			ul
+				margin-top: 30%
+			li
+				display: inline-block				
+				.icon
+					display: inline-block
+					background-color: rgba(0, 0, 0, 0.95)
+					padding: 1.5rem
+					margin: 0 0.5rem 0 0
+					&:hover
+						background-color: $active-icons
+					&_heart
+						background-size: 1.5rem
+		.pf-middle
+			h4
+				margin-top: 10%
+			p
+				margin-top: 7%
+			ul
+				margin-top: 15%
+		.pf-low
+			h4
+				margin-top: 4%
+			p
+				margin-top: 5%
+			ul
+				margin-top: 4%
+
+	&-footer
+		margin-top: 4rem	
+		background-image: url('../images/bg-portfolio_footer.jpg')
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+	&-bg		
+		background-color: rgba(25, 189, 154, 0.8)
+		padding: 5.5rem 0
+	
+	&-footer_content
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		align-items: center
+		color: $white
+		p
+			font-size: 2rem
+			margin-bottom: 3rem
+		.portfolio-btn
+			color: $white
+			border-color: $white
+			&:hover
+				background-color: $active-icons
+
+.team
+	padding-top: 8rem
+	padding-bottom: 10rem
+	&-column
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		align-items: center
+		margin-bottom: 6rem
+		h3
+			+ssp-light()
+			font-size: 2rem
+			text-transform: uppercase
+			letter-spacing: 0.4rem
+			color: $h-text
+			margin-bottom: 4rem
+		p
+			font-size: 1.4rem
+			color: $main-text
+			line-height: 2
+			text-align: center
+	&-row
+		+row-flex()
+		justify-content: center
+	&-container
+		position: relative
+	&-person
+		box-sizing: border-box
+		height: 365px
+		overflow: hidden
+		border: 1px solid pink		
+		width: 100%
+		position: relative
+		@media screen and (max-width: 720px)
+			height: 745px
+		&_notShow
+			display: none
+		
+	&-fade
+		animation-name: fade
+		animation-duration: 1.5s
+	&-person-photo_container
+		+col()
+		+size(4)
+		+size-md(5)
+		+size-sm(10)
+		+size-xs(12)
+		+shift-left(1)				
+		@media screen and (max-width: 992px)
+			+shift-left(0)
+		@media screen and (max-width: 720px)
+			margin-bottom: 1.5rem
+	&-person-photo_box
+		width: 285px
+		height: 365px
+		position: relative
+		@media screen and (max-width: 720px)
+			display: block
+			margin: 0 auto		
+	&-person-photo_overlay
+		box-sizing: border-box
+		position: absolute
+		top: 0.5rem
+		left: 0.5rem	
+		width: 275px
+		height: 353px
+		background-color: rgba(255,255,255, 0.5)		
+		opacity: 0
+		&:hover
+			opacity: 1
+	&-person-photo_content
+		text-align: center
+		margin-top: 50%
+		li
+			display: inline-block
+			text-align: center
+		.icon				
+			font-size: 1.5rem				
+			margin-left: 0
+			margin-right: 1rem
+			padding: 0.5rem					
+
+	&-person_description
+		+col()
+		+size(6)
+		+size-md(7)
+		+size-sm(12)
+		+shift-right(1)
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		color: $main-text
+		height: 365px
+		overflow-y: auto
+		padding-right: 2rem
+		@media screen and (max-width: 992px)
+			+shift-right(0)
+		&::-webkit-scrollbar
+			width: 0.4rem			
+		&::-webkit-scrollbar-thumb
+			background-color: $active-icons
+			height: 20px
+
+		h4
+			font-size: 2rem
+			color: #464646
+		h5
+			+ssp-light()
+			font-size: 1.4rem
+			text-transform: uppercase
+			font-style: italic
+			margin-bottom: 3.5rem
+		p
+			font-size: 1.4rem
+			text-align: right
+			line-height: 1.8
+			margin-bottom: 5rem	
+	&-person_skill
+		box-sizing: border-box
+		width: 80%
+		margin-bottom: 3.5rem
+		@media screen and (max-width: 540px)
+			width: 100%
+		.skill_description
+			display: flex
+			justify-content: space-between
+			margin-bottom: 0.5rem			
+			p				
+				text-transform: uppercase
+				font-size: 1.6rem
+				margin-bottom: 0
+		.skill_progress
+			display: block
+			width: 100%
+			height: 0.5rem
+			background-color: $progress-bg
+			.skill_value
+				background-color: $active-icons
+				height: 0.5rem
+				width: 1%
+			#sv65
+				width: 65%
+			#sv75
+				width: 75%
+			#sv80
+				width: 80%
+			#sv85
+				width: 85%
+
+	&-slider_dots
+		margin-top: 1rem
+	&-slider_dot
+		width: 1rem
+		height: 1rem
+		border: 1px solid $active-icons
+		border-radius: 50%
+		margin-left: 1rem
+		cursor: pointer
+		transition: background-color 0.6s ease
+		&_active
+			background-color: $active-icons
+
+@keyframes fade
+	from
+		opacity: 0.4
+	to
+		opacity: 1
+
+				
+				
+	
+
+
+
+
+
+
+		
+
