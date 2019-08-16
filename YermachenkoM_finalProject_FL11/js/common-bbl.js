@@ -21,8 +21,10 @@ function searching(e) {
 }
 
 showSearchBtn.addEventListener('click', showSearch);
-searchBtn.addEventListener('click', searching); //slider before footer realization
+searchBtn.addEventListener('click', searching);
 
+
+//slider before footer realization
 function SliderFP(obj) {
   this.sliderBlock = document.querySelector(obj.sliderBlock);
   this.sliderLine = document.querySelector(obj.sliderLine);

@@ -7,14 +7,12 @@ function sliderProduct (object) {
 	let changer = function (e) {
 		that.slideImg[activeSlide].classList.add('hide');
 		that.slideLink[activeSlide].classList.remove('activePr');
-		activeSlide = Array.from(that.slideLink).indexOf(e.target);		
-		console.log(activeSlide);
+		activeSlide = Array.from(that.slideLink).indexOf(e.target);				
 		that.slideImg[activeSlide].classList.remove('hide');
 		that.slideLink[activeSlide].classList.add('activePr');
 	}
 	Array.from(that.slideLink).forEach((el) => el.addEventListener('click', changer));		
 }
-
 
 let product1 = new sliderProduct ({
 	slideImg: 'product-view-slide',
@@ -25,12 +23,23 @@ let product1 = new sliderProduct ({
 let backetHeader = document.getElementById('backet-counter');
 let btnAddBag = document.getElementById('addProduct');
 let counterBacketHdr = 0;
+let sizesShoes = document.getElementsByClassName('size-style');
 
 function addProduct (e) {
-	counterBacketHdr++;
-	backetHeader.innerHTML = counterBacketHdr;
-	btnAddBag.innerHTML = 'Product Added';
-	btnAddBag.classList.add('buyBtn');
+	let elTarget = document.querySelector('input[name="pr-sz"]:checked');	
+	if (elTarget !== null) {
+		counterBacketHdr++;
+		backetHeader.innerHTML = counterBacketHdr;
+		btnAddBag.innerHTML = 'Product Added';
+		btnAddBag.classList.add('buyBtn');
+	} else {
+		alert('Please select a size');
+	}	
+}
+function resetProduct (e) {
+	btnAddBag.innerHTML = 'Add to card';
+	btnAddBag.classList.remove('buyBtn');
 }
 
 btnAddBag.addEventListener('click', addProduct);
+Array.from(sizesShoes).forEach((el) => el.addEventListener('click', resetProduct));
