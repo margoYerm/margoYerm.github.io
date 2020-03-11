@@ -1,7 +1,7 @@
 # margoYerm.github.io
 My projects
 
-[Final project EPAM online Frontend(JS)](https://margoyerm.github.io/YermachenkoM_finalProject_FL11/home.html) - It's a minimalistic e-commerce website. Main principles: mobile first, only HTML, CSS and JS; without preprocessors, libraries and another helping instruments. More information about task at Task description - 2019 - June.pdf in folder with project.
+[Final project EPAM online Frontend(JS)](https://margoyerm.github.io/YermachenkoM_finalProject_FL11/home.html) - It's a minimalistic e-commerce website. Main principles: mobile first, only HTML, CSS and JS; without preprocessors, libraries and another helping instruments. More information about task at Task description - 2019 - June.pdf in folder with project (https://github.com/margoYerm/margoYerm.github.io).
 
 [Gipsolit](https://margoYerm.github.io/gipsolit/app) -  It's a adaptive website. Development process includes: Sass, Gulp, Smart-grid. Libraries: jQuery, slick slider, fotorama, wow.js. Functions are written: show popups.
 
