@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>котоTranslater</title>
+  <link href="https://fonts.googleapis.com/css?family=Simonetta:400,400i,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <h1 class="page-header"> <span class="logo-txt">кото</span>Translater</h1>
+    
+  <section class="section-wrapper input-section">
+    <div class="container">
+      <div class="row">        
+        <div class="col-12">
+          <audio class="sound-cat" id="sound-inp-short" src="sounds/little-cat-single-myau.mp3"></audio>
+          <audio class="sound-cat" id="sound-inp-middle" src="sounds/little-cat-myau.mp3"></audio>
+          <form class="translater-form" id="translater-form">             
+            <input type="text" id="translater-input" class="text-to-translate" name="text-to-translate" placeholder="Введите фразу для перевода на кошачий язык">
+            <input type="submit" id="translate-submit-btn" class="button-koto button-submit" value="translate">
+          </form>
+        </div>        
+      </div>
+    </div>
+  </section>
+ 
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="head-panel">
+          <h2 class="section-header">Действия с котом</h2>
+          <button class="button-koto button-stop">Stop sounds</button>
+        </div>
+        
+        <div class="col-12">
+          <audio class="sound-cat" id="sound-angry-cat" src="sounds/angry-cat.mp3"></audio>
+          <audio class="sound-cat" id="sound-eating-cat" src="sounds/cat-eating.mp3"></audio>
+          <audio class="sound-cat" id="sound-murrr-cat" src="sounds/murchanie_kota.mp3"></audio>            
+          <audio class="sound-cat" id="sound-big-cat-rr" src="sounds/big-cat-rrrr.mp3"></audio>
+         <div class="actions-btns">
+           <button data-for-sound="sound-angry-cat" class="button-koto action-btn">Голодный кот</button>
+           <button data-for-sound="sound-eating-cat" class="button-koto action-btn">Покормить кота</button>
+           <button data-for-sound="sound-murrr-cat" class="button-koto action-btn">Погладить кота</button>
+           <button data-for-sound="sound-big-cat-rr" class="button-koto action-btn">Дернуть кота за хвост</button>           
+         </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

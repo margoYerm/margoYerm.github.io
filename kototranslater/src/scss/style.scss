@@ -1,0 +1,90 @@
+@import 'reset', 'layout', 'variables', 'fonts';
+
+@include reset;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  @include normal-font;
+  font-size: 1.6rem;
+}
+
+.page-header {
+  @include bold-font;
+  font-size: 5rem;
+  text-align: center;
+  padding: 70px 0px 20px;
+  .logo-txt {
+    color: $tiffany-color;
+  }
+}
+
+.section-header {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 10px auto 40px;
+  font-style: italic;
+  font-weight: 500;
+  flex-shrink: 5;
+}
+
+.section-wrapper {
+  padding: 50px 0px;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.input-section {
+  min-height: 25vh;
+}
+
+
+
+
+.text-to-translate {
+  display: inline-block;
+  font-size: 20px;
+  color: pink;
+  width: 80%;
+  padding: 15px 10px;
+  border: none;
+  border-bottom: 2px solid $tiffany-color;
+  border-radius: 5px;
+}
+.button-koto {
+  display: inline-block;
+  border: 1px solid $tiffany-color;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 15px 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-style: italic;
+  &:hover {
+    background-color: $tiffany-color;
+    color: #ffffff;
+  }
+  &:active {
+    background-color: darken($color: $tiffany-color, $amount: 10);
+  }
+}
+.actions-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-panel {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  .section-header {    
+    flex-shrink: 5;
+  }
+  .button-stop { 
+    margin-left: 20px;
+    font-size: 14px;    
+  }
+}
