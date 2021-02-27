@@ -1,6 +1,8 @@
 # margoYerm.github.io
 My projects
 
+[WeakAnuitex](https://margoyerm.github.io/weakAnuitex/src/) - This project show sweet memories about work at the Anuitex company. 
+
 [Котоtranslater](https://margoyerm.github.io/kototranslater/src/) - This project is a challenge from a friend. It is not finished, I am working on this project  Not commerce. https://github.com/margoYerm/margoYerm.github.io.
 
 [Final project EPAM online Frontend(JS)](https://margoyerm.github.io/YermachenkoM_finalProject_FL11/home.html) - It's a minimalistic e-commerce website. Main principles: mobile first, only HTML, CSS and JS; without preprocessors, libraries and another helping instruments. More information about task at Task description - 2019 - June.pdf in folder with project https://github.com/margoYerm/margoYerm.github.io.
