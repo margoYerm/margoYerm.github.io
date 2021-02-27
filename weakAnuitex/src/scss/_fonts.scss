@@ -1,0 +1,18 @@
+@mixin normal-font {
+  font-family: 'Simonetta', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin italic-font {
+  font-family: 'Simonetta', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin bold-font {
+  font-family: 'Simonetta', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+

@@ -178,21 +178,6 @@ body {
   flex-wrap: wrap;
 }
 
-.input-section {
-  min-height: 25vh;
-}
-
-.text-to-translate {
-  display: inline-block;
-  font-size: 20px;
-  color: pink;
-  width: 80%;
-  padding: 15px 10px;
-  border: none;
-  border-bottom: 2px solid #13e3c4;
-  border-radius: 5px;
-}
-
 .button-koto {
   display: inline-block;
   border: 1px solid #13e3c4;
@@ -213,18 +198,22 @@ body {
   background-color: #0fb49b;
 }
 
-.actions-btns {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.input-section {
+  min-height: 25vh;
 }
 
-.head-panel {
+.input-section .text-to-translate {
+  display: inline-block;
+  font-size: 20px;
+  color: pink;
+  width: 80%;
+  padding: 15px 10px;
+  border: none;
+  border-bottom: 2px solid #13e3c4;
+  border-radius: 5px;
+}
+
+.section-actions-cat .head-panel {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -233,14 +222,66 @@ body {
   margin-bottom: 20px;
 }
 
-.head-panel .section-header {
+.section-actions-cat .head-panel .section-header {
   -webkit-flex-shrink: 5;
   -ms-flex-negative: 5;
   flex-shrink: 5;
 }
 
-.head-panel .button-stop {
+.section-actions-cat .head-panel .button-stop {
+  display: inline-block;
   margin-left: 20px;
   font-size: 14px;
+}
+
+.section-actions-cat .actions-btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.section-actions-cat .actions-btns .action-btn {
+  margin-top: 15px;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .input-section .button-submit {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .input-section .text-to-translate {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .section-actions-cat .head-panel {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .section-actions-cat .head-panel .section-header {
+    width: 100%;
+  }
+
+  .section-actions-cat .head-panel .button-stop {
+    margin: 0 15px;
+  }
 }
 /*# sourceMappingURL=maps/style.css.map */

@@ -37,23 +37,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.input-section {
-  min-height: 25vh;
-}
 
-
-
-
-.text-to-translate {
-  display: inline-block;
-  font-size: 20px;
-  color: pink;
-  width: 80%;
-  padding: 15px 10px;
-  border: none;
-  border-bottom: 2px solid $tiffany-color;
-  border-radius: 5px;
-}
 .button-koto {
   display: inline-block;
   border: 1px solid $tiffany-color;
@@ -71,20 +55,64 @@ body {
     background-color: darken($color: $tiffany-color, $amount: 10);
   }
 }
-.actions-btns {
-  display: flex;
-  justify-content: space-between;
+
+
+.input-section {
+  min-height: 25vh;
+  @media screen and (max-width: 768px) {    
+    .button-submit {
+      width: 100%;
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  }
+  .text-to-translate {
+    display: inline-block;
+    font-size: 20px;
+    color: pink;
+    width: 80%;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 2px solid $tiffany-color;
+    border-radius: 5px;
+    @media screen and (max-width: 768px) {      
+      width: 100%;
+      font-size: 16px;      
+    }
+  }
 }
 
-.head-panel {
-  display: flex;
-  width: 100%;
-  margin-bottom: 20px;
-  .section-header {    
-    flex-shrink: 5;
+.section-actions-cat {
+  .head-panel {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;      
+      flex-direction: column;
+    }
+    .section-header {    
+      flex-shrink: 5;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .button-stop { 
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 14px;    
+      @media screen and (max-width: 768px) {
+        margin: 0 15px;
+      }
+    }    
   }
-  .button-stop { 
-    margin-left: 20px;
-    font-size: 14px;    
+  .actions-btns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .action-btn {
+      margin-top: 15px;
+      margin-left: 0;
+    }
   }
 }
